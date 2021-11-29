@@ -1,0 +1,96 @@
+/*// alert('Hello')
+
+//1.Змінні
+// var name = 'Yaroslav'// не використовувати
+const lastName = 'Kit'
+let age = 19
+const isProgrammer = true
+
+// const Name = prompt('Введіть ім`я')
+// alert(Name + ' ' + lastName)
+
+// typeof - тип даних
+console.log(typeof age)
+
+//6.Умовні оператори
+const courseStatus = 'fail'  // ready or pending
+
+if (courseStatus === 'ready') {
+    console.log('ya')
+} else if (courseStatus === 'pending') {
+    console.log('50/50')
+} else {
+    console.log('no')
+}
+
+//Подвійне та потрійте '='
+const first = 40
+const second = '40'
+console.log(first == second) // === - порівнює вміст та тип змінної, == - тільки вміст
+
+//Тернарний вираз
+const isReady = true
+isReady ? console.log('yeah') : console.log('niiiii')
+
+// 8 Функції
+function calculateAge(year) {
+    return 2021 - year
+}
+
+const myAge = calculateAge(1993)
+console.log(myAge)
+console.log(calculateAge(2000))
+
+function logInfoAbout (name, year) {
+    const age = calculateAge(year)
+
+    if (age>0) {
+        console.log('Людина по імені ' + name + ' має вік ' + age )
+    } else {
+        console.log('Це вже майбутнє')
+    }
+}
+
+logInfoAbout('Ярослав', 2002)*/
+
+// 9 Масиви
+
+const cars = ['mazda', 'mers', 'audi']
+console.log(cars)
+console.log(cars[2])
+console.log(cars.length)
+
+cars[0] = 'Lamborghini'
+cars[3] = 'Peugeot'
+cars[cars.length] = 'Bugatti'
+console.log(cars)
+
+// 10 Цикли
+console.log("cycle")
+for (let car of cars) {
+    console.log(car)
+}
+
+// 11 Об'єкти
+
+const person = {
+    firstName: 'Yaroslav',
+    lastName: 'Kit',
+    age: 19,
+    languages: ['UA', 'Ru', 'En'],
+    hasWife:false,
+    greet: function () {
+        console.log('greet from person')
+    }
+}
+console.log(person.firstName)
+console.log(person['lastName'])
+const key = 'languages'
+console.log(person[key])
+person.isProgrammer = false
+person.greet()
+
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
